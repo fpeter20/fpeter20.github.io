@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masszázsok</title>
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/masszazsok.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sved">
+        <h4>Frissítő svédmasszázs</h4>
+        <p class="sved"><img class="svedkep" src="img/hat1.jpg" alt="Frissítő svédmasszázs">Ajánlom fájdalom, mozgásszervi panaszok és izomgörcsök enyhítése érdekében, de hatásos a stressz leküzdésében és az általános egészségi állapot javításában is. Masszázs során megszünnek a kötőszövetben lévő feszülések és letapadások. Az izomzat teljesítőképessége nő, ezáltal az izommunka gyorsabb és kitartóbb lesz, javul az izomzat vérellátása. Lazítja az izomcsomókat. Kitágítja az ereket, a test nyirok és vérkeringési rendszere felgyorsul. A szív teljesítménye javul, az anyagcsere fokozódik. Nemcsak frisseséget ad, csökkenti a sérülések kockázatát is.</p>
+    </div>
+    <div id="relaxalo">
+        <h4>Aromaolajos relaxáló masszázs</h4>
+        <p class="relaxalo"><img class="relaxalokep" src="img/olajoskez.jpg" alt="Aromaolajos relaxáló masszázs">Ajánlom ha kicsit kiszabadulnál a napi taposómalomból, ha szeretnél egy kicsit lelassulni, magadra öszpontosítani, hogy aztán újult erővel indulj neki a hétköznapoknak.
+            A masszázs során alkalmazott fogások nyugtató hatást gyakorolnak az idegrendszerre. A relaxáció élményét a természetes olajok és aromaolajok alkalmazása teszi még kellemesebbé, melyek a bőrbe masszírozva és belélegezve is jótékonyan hatnak a szervezetedre. A masszázs ezen formája oldja a stresszt, nyugtatja az idegrendszert, elősegíti a jó közérzet kialakulását, a nyugodt alvást. Hatására csökken a vérnyomás, javul a vér- és nyirokkeringés, lassul a pulzus és mélyül a légzés.</p>
+    </div>
+    <div id="talp">
+        <h4>Talpcsakra masszázs</h4>
+        <p class="talp"><img class="talpkep" src="img/lab2.jpg" alt="Talpcsakra masszázs">Csökkenti a testi fájdalmakat és lelki szinten a probléma gyökeréig eljut. Ideális a betegség megelőzésében, az egészség megőrzésében, a pszichoszomatikus és krónikus betegségek kiegészítő kezelésében. A terápia mellékhatásoktól mentes, mivel a test öngyógyító mechanizmusát indítja el. Oldja a blokkokat, a stresszt és a feszültséget.</p>
+    </div>
+
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.com">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>

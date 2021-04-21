@@ -1,0 +1,58 @@
+html {height: 100%;}
+
+body {height: 100%; margin: 0; background-size: cover; background-color: beige;}
+
+header {height: 100px; background-color: #d0815f;}
+
+.logo {height: 100px; margin-left: 180px; border-radius: 300px;}
+
+.nav {float: right; height: 100%;}
+
+a {text-decoration: none; color: white; font-size: 25px;}
+
+.menu {list-style: none; height: 100%; margin: 0;}
+
+.menu li {float: left; margin-top: 30px; height: 40px; border-right: 1px solid #000; background-color: #d0815f; color: white;}
+
+.menu li:last-child {border: none;}
+
+.menu a {display: block; height: 100%; padding: 0 20px; line-height: 38px; text-transform: uppercase;}
+
+.menu a:hover {background-color: rgba(0, 0, 0, 0.1);}
+
+.menu>li>ul {position: absolute; list-style: none; margin: 0; padding: 0; width: 100%;  display: none; background-color: #d0815f;}
+
+.menu>li.almenu>ul {width: 100%;}
+
+.menu>li.almenu:hover ul {display: block;}
+
+.menu>li>ul>li {float: none; margin-top: 0px; height: 40px; border-right: none; border-bottom: 1px solid #000; text-align: center;}
+
+.mobilmenu {float: right;font-size: 64px; display: none; font-weight: bold; margin-right: 50px;}
+
+.menunyit {display: block !important;} /*ez nyitja ki a menüt*/
+        
+.almenu {position: relative; width: 270px; text-align: center;}
+
+#sved h4 {text-align: center; font-size: 200%; color: saddlebrown;}
+
+#relaxalo h4 {text-align: center; font-size: 200%; color: saddlebrown; padding-top: 70px;}
+
+#talp h4 {text-align: center; font-size: 200%; color: saddlebrown; padding-top: 70px;}
+
+.svedkep {width:20%; height:20%; float: left; padding-right: 30px;}
+
+.relaxalokep {width:20%; height:20%; float: right; padding-left: 30px;}
+
+.talpkep {width:20%; height:20%; float: left; padding-right: 30px;}
+
+.sved {font-size: 160%; color: saddlebrown; line-height: 150%; margin-left: 30px; text-align: justify; margin-right: 30px;}
+
+.relaxalo {font-size: 160%; color: saddlebrown; line-height: 150%; margin-left: 30px; text-align: justify; margin-right: 30px;}
+
+.talp {font-size: 160%; color: saddlebrown; line-height: 150%; margin-left: 30px; text-align: justify; margin-right: 30px;}
+
+.mail {text-align: center; color: white;}
+
+footer {height: 90px; background-color: #d0815f; margin-top: 143px;}
+ 

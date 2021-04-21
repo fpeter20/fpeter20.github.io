@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élettani hatások</title>
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/elettani.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h4>Amit a masszázsról tudni érdemes</h4>
+    <p>A rendszeres masszázs segíti a test egészséges működését. Nemcsak frissességet ad, hanem csökkenti a sérülések kockázatát is, illetve felgyorsítja a sérülések utáni felépülést. Megakadályozza a nem használt izmok sorvadását, enyhíti az álmatlanságot, fokozza az éberséget, csökkenti a stressz hatását, részben helyettesíti az aktív sportot.</p>
+    <h4>A masszázs hatásai</h4>
+    <dl>
+        <dt><b>Bőr</b></dt>
+        <dd>– Megőrzi természetes rugalmasságát. Az elhalt hámsejtek leválnak. Fokozódik a bőr méregkiválasztása.</dd>
+        <dt><b>Kötőszövetek</b></dt>
+        <dd>– Megszűnnek a kötőszövetben lévő feszülések letapadások. Csökken a lerakódott zsír mennyisége.</dd>
+        <dt><b>Izomzat</b></dt>
+        <dd>– Az izomzat teljesítőképessége nő. Az izommunka gyorsabb és kitartóbb lesz. Javul az izomzat vérellátása. Megelőzi, valamint megszünteti az izomlázat. Lazítja az izomcsomókat.</dd>
+        <dt><b>Keringés</b></dt>
+        <dd>- Kitágítja az ereket, a test nyirok és vérkeringési rendszere felgyorsul. A szív teljesítménye és a koszorúserek keringése javul.</dd>
+        <dt><b>Anyagcsere</b></dt>
+        <dd>– Az emésztés, az emésztő enzimek és a vizelet kiválasztása fokozódik.</dd>
+        <dt><b>Idegrendszer</b></dt>
+        <dd>– Enyhíti a stressz hatásait. Megteremtődnek a pihentető alváshoz szükséges feltételek. A fáradságérzet csökken. Egyrészt serkenti a szervezet aktivitását, másrészt nyugtat.</dd>
+    </dl>
+    <h4>A masszázs javallatai</h4>
+    <ul class="li">
+        <li>fejfájás</li>
+        <li>krónikus fáradtság</li>
+        <li>közérzet javítása, stressz oldása</li>
+        <li>izomtömeg vesztés lassítása (életkor előre haladtával)</li>
+        <li>izomzat erejének növelése</li>
+        <li>fájdalmas izomcsomók kezelése</li>
+        <li>reumatológiai és mozgásszervi betegségek</li>
+        <li>vérkeringési zavarok csökkentése</li>
+        <li>krónikus léguti betegségek</li>
+        <li>műtétek utáni utókezelés</li>
+        <li>krónikus székrekedés</li>
+        <li>csupán felfrissülésre vágyik</li>
+    </ul>
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.com">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+</body></html>

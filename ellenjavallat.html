@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellenjavallatok</title>
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/ellenjavallat.css">
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h4>Amikor nem szabad masszírozni</h4>,
+    <p>Sajnos azonban vannak olyan betegségek, élethelyzetek, amikor egy masszázs nem javít a helyzeten, hanem ront azon. Ezekben az esetekben kifejezetten tilos masszírozni. Minden alkalommal mikor időpontot foglalsz, rákérdezek ezekre.</p>
+    <ul class="li">
+        <li>láz</li>
+        <li>fertőző betegség</li>
+        <li>akut gyulladás</li>
+        <li>friss törés és szalagszakadás</li>
+        <li>daganat</li>
+        <li>pacemaker</li>
+        <li>infarktus után</li>
+        <li>vérzékenység</li>
+        <li>menstruáció első három napja</li>
+        <li>terhesség első négy hónapja</li>
+        <li>érszűkület</li>
+        <li>fekély</li>
+        <li>viszérbántalmak</li>
+        <li>magas vérnyomás (ha gyógyszerrel nem kezelt)</li>
+        <li>mélyvénás trombózis</li>
+    </ul>
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.c egy masszázs nem javít a helyzeten, hanem ront azon. m">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+</body></html>

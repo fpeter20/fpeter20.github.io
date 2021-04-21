@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csend Élet masszázs</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img class="kep1" src="img/csendelet5.jpg" alt="Csendélet" width="100%" height="730px">
+    </div>
+    <p class="csend">Egészség Harmónia Magaddal a Világgal</p>
+    <div class="gomb">
+        <a href="kapcsolat.html">Elérhetőségeim</a>
+    </div>
+    <div>
+        <h4>A személyközpontú masszázsterápia</h4>
+        <p class="szoveg"> <b>Mit is jelent ez?</b> <br> <b>Minden ember egyedi és megismételhetetlen csoda, különböző életúttal, eltérő problémákkal.</b> <br>
+            Ha kisgyermekes édesanya vagy a háztartás, a gyermekekről való gondoskodás, az alvás, énidő egyensúlyát keresed, és úgy érzed, semmi energia nem lenne elég. <br>
+            Ha kamasz gyermeked van gyakori az aggódás, és észreveszed hogy a tested már itt ott jelzi az idő múlását. <br>
+            Ha egyetemista vagy, sokat görnyedsz a monitorod felett, és ott van a vizsgadrukk. <br>
+            Ha nagyszülő vagy szeretnél visszakapni némi emléket abból a frissességből amit hajdanán éreztél. <br><br>
+
+            <b>Egészség, harmónia, boldog élet: ez, amire mindannyian vágyunk!</b> <br><br>
+
+            <b>Hogyan tudok neked ebben segíteni és mire számíthatsz, ha eljössz hozzám?</b><br>
+            Csak rád figyelek! Megbeszéljük milyen problémával érkeztél, így célzott szakszerű masszázst kapsz. Nem dolgozom futószalagszerűen. Az sem számodra sem számomra nem okozna örömet. Lehetőséged van relaxációs zenét választani, de hallgathatsz léleképítő előadást is. Beszélgethetünk, de elmerülhetsz a csendben is. Kiválaszthatod a számodra legmegfelelőbb masszázsolajat, illóolajat. Kizárólag természetes összetevőkből álló, kiváló minőségű termékekkel várlak. Elmondhatod, sőt kifejezetten várom véleményedet, hiszen ebből tudok építkezni. A kezelés végén ásványvízzel, gyümölccsel, szeretettel indítalak útnak. <br><br>
+            <b>Bízom benne hogy nemsokára találkozunk!</b>
+        </p>
+    </div>
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.com">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>

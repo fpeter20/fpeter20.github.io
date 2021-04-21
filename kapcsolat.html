@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/kapcsolat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h4>Kedves Érdeklődő!</h4>
+        <p class="p1">Bármilyen kérdésed, kérésed van a masszázzsal kapcsolatban keress bátran az alábbi elérhetőségeken. Igyekszem a legnagyobb segítségedre lenni.</p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <td>Telefonszám</td>
+                <td><a class="mail1" href="tel:+36204494429">+36 20/449-4429</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <td>e-mail cím:</td>
+                <td><a class="mail1" href="mailto:csendeletmasszazs@gmail.com">csendeletmasszazs@gmail.com</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <td>Cím:</td>
+                <td class="mail1">1181 Budapest, Csontváry utca 38 I/4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <iframe class="terkep" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.726682443242!2d19.166324615501882!3d47.43677257917378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c267bd2b10fd%3A0x3bf06e4b61b2b6db!2sBudapest%2C%20Csontv%C3%A1ry%20Kosztka%20Tivadar%20u.%2038%2C%201181!5e0!3m2!1shu!2shu!4v1618835252614!5m2!1shu!2shu" width="95%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div id="form">
+        <form class="p1" action="csendeletmasszazs@gmail.com/action_page.php">
+            <label for="fname">Vezetéknév:</label>
+            <input type="text" id="fname" name="fname" value="Nagy" style="font-size: 90%; color: saddlebrown"><br>
+            <label for="lname">Utónév:</label>
+            <input type="text" id="lname" name="lname" value="István" style="font-size: 90%; color: saddlebrown"><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Férfi</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nő</label><br>
+            <label for="lname">Telefonszám:</label>
+            <input type="text" id="lname" name="lname" value="+36 12/123-1234" style="font-size: 90%; color: saddlebrown"><br>
+            <label for="email">E-mail cím:</label>
+            <input type="email" id="email" name="email" value="valami@valami.com" style="font-size: 90%; color: saddlebrown"><br>
+            <textarea rows="4" cols="50" name="comment" form="usrform" style="font-size: 90%; color: saddlebrown;">Írd meg miben segíthetek</textarea><br>
+            <input type="submit" value="Küldés" style="font-size: 90%; color: saddlebrown;">
+        </form>
+    </div>
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.com">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magamról</title>
+    <link rel="icon" href="img/logoskez.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="css/magamrol.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mobilmenu').click(function() {
+                $('.menu').toggleClass("menunyit");
+            });
+            $('.almenu').click(function() {
+                $('.almenu .menunyit').removeClass("menunyit");
+                $('ul', $(this)).toggleClass("menunyit");
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logoskez.png" alt="logo">
+        <div class="mobilmenu">&#8801;</div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="masszazsok.html">Masszázsok</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li class="almenu">
+                    <a href="#">Tudnivalók</a>
+                    <ul>
+                        <li><a href="elettani.html">Élettani hatása</a></li>
+                        <li><a href="ellenjavallat.html">Ellenjavallatok</a></li>
+                    </ul>
+                </li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <p class="p2"><img class="andifoto" src="img/andifoto2.jpg" alt="Andrea"> <b>Fótiné Kosznovszki Andrea</b></p>
+        <p class="p3"><br>gyógymasszőr,<br>általános ápoló,<br>diplomás pedagógus<br></p>
+    </div>
+    <div>
+        <h4>Magamról</h4>
+    </div>
+    <div>
+        <p class="p4">Vidámság, pozitív szemlélet, empátia, segítőkészség. Ezek mentén próbálom az életemet alakítani. <br>Gyermekként sebész szerettem volna lenni, ez nem valósult meg. Sok minden más igen: dolgoztam többek között csecsemőgondozóként, óvodapedagógusként, ápolóként a Magyar Máltai Szeretetszolgálatnál. Így a szakmai tudásom mellé rengeteg tapasztalatot szereztem az emberi lélek megismeréséhez melyet munkám során kamatoztathatok.<br><br>
+            2010-ben végeztem el svédmasszőr majd gyógymasszőr képzést. Gyakorlatomat a Lukács Gyógyfürdőben töltöttem és ott is vizsgáztam. A következő két évben masszőrként dolgoztam. Vágyam, hogy saját szalont nyithassak, egy ideig még váratott magára.<br><br>
+            Most újult erővel, tele energiával, szakmai tudásomat újabb képesítésekkel bővítve fogtam bele álmaim megvalósításába. Egy olyan barátságos légkört és magas színvonalú kezelést biztosító masszázsszalon megnyitásába, ahol a hozzám érkező vendég testi és lelki egészsége egyaránt fontos.<br><br>
+            &bdquo;Senkit se eresszetek útjára úgy, hogy jobbá és boldogabbá ne tennétek!&rdquo; (Teréz anya)<br>
+        <p class="p5">F. Andi</p>
+    </div>
+
+    <footer>
+        <p class="mail" style="font-size: 25px">Fótiné Kosznovszki Andrea<br>tel: +36/20-449-4429<br><a class="mail" href="mailto:csendeletmasszazs@gmail.com">e-mail: csendeletmasszazs@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>
